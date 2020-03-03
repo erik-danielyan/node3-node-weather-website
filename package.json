@@ -1,7 +1,6 @@
 {
   "name": "web-server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js"
@@ -11,7 +10,16 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "hbs": "^4.0.1",
+    "hbs": "^4.1.0",
     "request": "^2.88.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erik-danielyan/node3-node-weather-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erik-danielyan/node3-node-weather-website/issues"
+  },
+  "homepage": "https://github.com/erik-danielyan/node3-node-weather-website#readme",
+  "description": ""
 }

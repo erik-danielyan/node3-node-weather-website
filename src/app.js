@@ -5,7 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
-const prot = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 // Defines paths for expressconfig
 const publicDirectoryPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
@@ -74,6 +74,6 @@ app.get('*', (req, res) => {
     res.render('notFound', {title: '404', name: "Erik", message:'Page not found.'})
 })//need to come last, after other all routes set up
 
-app.listen(prot, () => {
+app.listen(port, () => {
     console.log('Server is up on port ' + port )
 })
